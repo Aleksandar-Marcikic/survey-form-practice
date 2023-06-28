@@ -1,0 +1,204 @@
+<DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ancient Roman Emperors Survey</title> 
+        <link rel="stylesheet" href="styles.css">   
+    </head>
+    <body>
+     <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Ancient Roman Emperors Survey</h1>
+            <p id="description" class="description text-center">Thank you for taking the time to check out my practice survey</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input 
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+            </div>
+            <div class="form-group">   
+                <label id="email-label" for="email">Email</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input
+                  type="text"
+                  name="number"
+                  id="number"
+                  class="form-control"
+                  placeholder="Enter your number"
+                  min="1"
+                  max="99"
+                  required
+                />
+            </div>
+            <div class="form-group">
+                <p>Who was the first Roman emperor?</p>
+                <select id="dropdown" name="first" class="form-control" required>
+                    <option disabled selected value>Select an emperor</option>
+                    <option value="trajan">Trajan</option>
+                    <option value="caesar">Caesar</option>
+                    <option value="augustus">Augustus</option>
+                    <option value="constantine">Constantine</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Which famous Roman general declared that "alea iacta est"?</p>
+                <label>
+                    <input  
+                      name="user-recommend"
+                      type="radio"
+                      class="input-radio"
+                      value="julius-caesar"
+                      checked
+                    />Julius Caesar
+                </label>
+                <label>
+                    <input
+                      name="user-recommend"
+                      type="radio"
+                      class="input-radio"
+                      value="justinian"
+                      checked
+                    />Justinian
+                </label>
+                <label>
+                    <input
+                      name="user-recommend"
+                      type="radio"
+                      class="input-radio"
+                      value="sulla"
+                      checked
+                    />Sulla
+                </label>    
+            </div>
+
+            <div class="form-group">
+                <p>During the reign of which Roman emperor was Egypt conquered?</p>
+                <select id="dropdown" name="favorite" class="form-control" required>
+                    <option disabled selected value>Select an emperor</option>
+                    <option value="augustus">Augustus</option>
+                    <option value="constans">Constans</option>
+                    <option value="marcian">Marcian</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Which Roman emperors belonged to the Julio-Claudian dynasty?
+                <span class="clue">(Check all that apply)</span>
+                </p>
+                <label>
+                    <input
+                      name="emperor"
+                      type="checkbox"
+                      class="input-checkbox"
+                      value="nero"
+                    />Nero
+                </label>
+                <label>
+                    <input
+                      name="emperor"
+                      type="checkbox"
+                      class="input-checkbox"
+                      value="tiberius"
+                    />Tiberius
+                </label>
+                <label>
+                    <input
+                      name="emperor"
+                      type="checkbox"
+                      class="input-checkbox"
+                      value="hadrian"
+                    />Hadrian
+                </label>
+                <label>
+                    <input
+                      name="emperor"
+                      type="checkbox"
+                      class="input-checkbox"
+                      value="alexander-severus"
+                    />Alexander Severus
+                </label>
+                <label>
+                    <input
+                      name="emperor"
+                      type="checkbox"
+                      class="input-checkbox"
+                      value="augustus"
+                    />Augustus
+                </label>
+                <label>
+                    <input
+                      name="emperor"
+                      type="checkbox"
+                      class="input-checkbox"
+                      value="nero"
+                    />Nero
+                </label>
+                <label>
+                    <input
+                      name="emperor"
+                      type="checkbox"
+                      class="input-checkbox"
+                      value="galba"
+                    />Galba
+                </label>
+                <label>
+                    <input
+                      name="emperor"
+                      type="checkbox"
+                      class="input-checkbox"
+                      value="claudius"
+                    />Claudius
+                </label>
+                <label>
+                    <input
+                      name="emperor"
+                      type="checkbox"
+                      class="input-checkbox"
+                      value="domitian"
+                    />Domitian
+                </label>
+                <label>
+                    <input
+                      name="emperor"
+                      type="checkbox"
+                      class="input-checkbox"
+                      value="caligula"
+                    />Caligula
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea
+                    id="comments"
+                    name="comments"
+                    class="input-testarea"
+                    placeholder="Enter your comment here..."
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+     </div>   
+    </body>
+</html>
